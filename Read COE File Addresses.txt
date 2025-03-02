@@ -1,0 +1,47 @@
+
+		  -- ==========================================================================
+		  -- ==========================================================================
+		  -- Read .COE File Addresses
+		  
+        WAIT FOR clk_period;
+		  AddrRead  <= "00110";
+		  
+        WAIT FOR clk_period;		  
+		  AddrRead  <= "00001";
+		  
+        WAIT FOR clk_period;
+		  AddrRead  <= "10000";
+		  
+        WAIT FOR clk_period;
+		  AddrRead  <= "00011";
+		  
+        WAIT FOR clk_period;
+		  AddrRead  <= "00111";
+		  
+        WAIT FOR clk_period;
+   
+		  -- ==========================================================================
+		  -- ==========================================================================
+		  -- Write, then Read
+		  
+		  
+        WAIT FOR clk_period;
+        Write <= '1';  
+		  Read  <= '0';
+		  
+		  WAIT FOR clk_period;
+		  AddrWrite  <= "00111";
+
+		  WAIT FOR clk_period;
+		  NumberIn <= "1111111111111111";
+		  
+		  WAIT FOR clk_period;
+		  
+        WAIT FOR clk_period;
+        Write <= '0';  
+		  Read  <= '1';
+		  
+		  WAIT FOR clk_period;
+		  AddrRead  <= "00111";		  
+		  		  
+		  WAIT FOR clk_period;
