@@ -17,7 +17,6 @@
 *.log
 *.xmsgs
 *.wdb
-*.wcfg
 *.ini
 *.xml
 *.sim
