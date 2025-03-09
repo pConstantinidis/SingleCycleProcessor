@@ -1,0 +1,95 @@
+# ==============================================
+# Xilinx ISE Ignored Files and Directories
+# ==============================================
+# Ignore ISE project files
+*.prj
+*.xise
+*.gise
+*.stx
+*.lso
+*.xst
+*.xrpt
+*.xreport
+*.syr
+*.html
+*.cmd
+*.cmd_log
+*.log
+*.xmsgs
+*.wdb
+*.wcfg
+*.ini
+*.xml
+*.sim
+*.vdbl
+*.vdbx
+*.vdb
+
+# Ignore ISE simulation and synthesis outputs
+*.exe*
+*.cf
+*.o
+*.lin64.o
+*.didat
+*.c
+*.dbg
+*.crash
+*.tmp
+*.save
+*.usage
+
+# Ignore ISE directories
+/ipcore_dir/
+/iseconfig/
+/isim/
+/_xmsgs/
+/xst/
+/work/
+/tmp_save/
+/precompiled.exe.sim/
+/ieee/
+/projnav.tmp/
+/file graph/
+
+# Ignore specific ISE files
+fuse.log
+fuseRelaunch.cmd
+isim.cmd
+isim.log
+isim_usage_statistics.html
+lockfile
+pn_info
+pn_parser.xmsgs
+webtalk_pn.xml
+xilinxsim.ini
+ask1_1.projectmgr
+pepExtractor.prj
+RegisterFile_envsettings.html
+RegisterFile_summary.html
+
+# ==============================================
+# Vivado Ignored Files and Directories
+# ==============================================
+# Ignore Vivado project files
+*.xpr
+*.jou
+*.log
+*.str
+*.cache/
+*.hw
+*.ip_user_files/
+*.sim/
+*.srcs/
+*.data/
+*.runs/
+*.gen/
+*.tmp/
+*.cache/
+*.hw/
+*.ip_user_files/
+*.sim/
+*.srcs/
+*.data/
+*.runs/
+*.gen/
+*.tmp/
