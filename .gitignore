@@ -19,7 +19,6 @@
 *.wdb
 *.ini
 *.xml
-*.sim
 *.vdbl
 *.vdbx
 *.vdb
@@ -76,18 +75,12 @@ RegisterFile_summary.html
 *.str
 *.cache/
 *.hw
-*.ip_user_files/
-*.sim/
-*.srcs/
 *.data/
 *.runs/
 *.gen/
 *.tmp/
 *.cache/
 *.hw/
-*.ip_user_files/
-*.sim/
-*.srcs/
 *.data/
 *.runs/
 *.gen/
