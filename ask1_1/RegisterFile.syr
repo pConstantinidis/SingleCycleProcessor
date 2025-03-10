@@ -1,0 +1,208 @@
+Release 14.7 - xst P.20131013 (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> 
+Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.02 secs
+ 
+--> 
+Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.02 secs
+ 
+--> 
+Reading design: RegisterFile.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "RegisterFile.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "RegisterFile"
+Output Format                      : NGC
+Target Device                      : xc7a100t-3-csg324
+
+---- Source Options
+Top Module Name                    : RegisterFile
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 32
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Parsing VHDL file "/home/ds123f15/Documents/Xilinx_Projects/ask1_1/Register32.vhd" into library work
+Parsing entity <Register32>.
+Parsing architecture <Behavioral> of entity <register32>.
+Parsing VHDL file "/home/ds123f15/Documents/Xilinx_Projects/ask1_1/MUX.vhd" into library work
+Parsing entity <MUX>.
+Parsing architecture <Behavioral> of entity <mux>.
+Parsing VHDL file "/home/ds123f15/Documents/Xilinx_Projects/ask1_1/Decoder5to32.vhd" into library work
+Parsing entity <Decoder5to32>.
+Parsing architecture <Behavioral> of entity <decoder5to32>.
+Parsing VHDL file "/home/ds123f15/Documents/Xilinx_Projects/ask1_1/and_gate.vhd" into library work
+Parsing entity <and_gate>.
+Parsing architecture <model> of entity <and_gate>.
+Parsing VHDL file "/home/ds123f15/Documents/Xilinx_Projects/ask1_1/RegisterFile.vhd" into library work
+Parsing entity <RegisterFile>.
+Parsing architecture <Structural> of entity <registerfile>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating entity <RegisterFile> (architecture <Structural>) from library <work>.
+
+Elaborating entity <Decoder5to32> (architecture <Behavioral>) from library <work>.
+ERROR:HDLCompiler:1401 - "/home/ds123f15/Documents/Xilinx_Projects/ask1_1/Decoder5to32.vhd" Line 15: Signal Output_Decoder[31] in unit Decoder5to32 is connected to following multiple drivers:
+Driver 0: output signal Output_Decoder[31] of instance Latch (Output_Decoder[31]).
+Driver 1: output signal of instance Ground (GND_7_o_buf_0).
+Driver 0: output signal Output_Decoder[30] of instance Latch (Output_Decoder[30]).
+Driver 1: output signal of instance Ground (GND_7_o_buf_0).
+Driver 0: output signal Output_Decoder[29] of instance Latch (Output_Decoder[29]).
+Driver 1: output signal of instance Ground (GND_7_o_buf_0).
+Driver 0: output signal Output_Decoder[28] of instance Latch (Output_Decoder[28]).
+Driver 1: output signal of instance Ground (GND_7_o_buf_0).
+Driver 0: output signal Output_Decoder[27] of instance Latch (Output_Decoder[27]).
+Driver 1: output signal of instance Ground (GND_7_o_buf_0).
+Driver 0: output signal Output_Decoder[26] of instance Latch (Output_Decoder[26]).
+Driver 1: output signal of instance Ground (GND_7_o_buf_0).
+Driver 0: output signal Output_Decoder[25] of instance Latch (Output_Decoder[25]).
+Driver 1: output signal of instance Ground (GND_7_o_buf_0).
+Driver 0: output signal Output_Decoder[24] of instance Latch (Output_Decoder[24]).
+Driver 1: output signal of instance Ground (GND_7_o_buf_0).
+Driver 0: output signal Output_Decoder[23] of instance Latch (Output_Decoder[23]).
+Driver 1: output signal of instance Ground (GND_7_o_buf_0).
+Driver 0: output signal Output_Decoder[22] of instance Latch (Output_Decoder[22]).
+Driver 1: output signal of instance Ground (GND_7_o_buf_0).
+Driver 0: output signal Output_Decoder[21] of instance Latch (Output_Decoder[21]).
+Driver 1: output signal of instance Ground (GND_7_o_buf_0).
+Driver 0: output signal Output_Decoder[20] of instance Latch (Output_Decoder[20]).
+Driver 1: output signal of instance Ground (GND_7_o_buf_0).
+Driver 0: output signal Output_Decoder[19] of instance Latch (Output_Decoder[19]).
+Driver 1: output signal of instance Ground (GND_7_o_buf_0).
+Driver 0: output signal Output_Decoder[18] of instance Latch (Output_Decoder[18]).
+Driver 1: output signal of instance Ground (GND_7_o_buf_0).
+Driver 0: output signal Output_Decoder[17] of instance Latch (Output_Decoder[17]).
+Driver 1: output signal of instance Ground (GND_7_o_buf_0).
+Driver 0: output signal Output_Decoder[16] of instance Latch (Output_Decoder[16]).
+Driver 1: output signal of instance Ground (GND_7_o_buf_0).
+Driver 0: output signal Output_Decoder[15] of instance Latch (Output_Decoder[15]).
+Driver 1: output signal of instance Ground (GND_7_o_buf_0).
+Driver 0: output signal Output_Decoder[14] of instance Latch (Output_Decoder[14]).
+Driver 1: output signal of instance Ground (GND_7_o_buf_0).
+Driver 0: output signal Output_Decoder[13] of instance Latch (Output_Decoder[13]).
+Driver 1: output signal of instance Ground (GND_7_o_buf_0).
+Driver 0: output signal Output_Decoder[12] of instance Latch (Output_Decoder[12]).
+Driver 1: output signal of instance Ground (GND_7_o_buf_0).
+Driver 0: output signal Output_Decoder[11] of instance Latch (Output_Decoder[11]).
+Driver 1: output signal of instance Ground (GND_7_o_buf_0).
+Driver 0: output signal Output_Decoder[10] of instance Latch (Output_Decoder[10]).
+Driver 1: output signal of instance Ground (GND_7_o_buf_0).
+Driver 0: output signal Output_Decoder[9] of instance Latch (Output_Decoder[9]).
+Driver 1: output signal of instance Ground (GND_7_o_buf_0).
+Driver 0: output signal Output_Decoder[8] of instance Latch (Output_Decoder[8]).
+Driver 1: output signal of instance Ground (GND_7_o_buf_0).
+Driver 0: output signal Output_Decoder[7] of instance Latch (Output_Decoder[7]).
+Driver 1: output signal of instance Ground (GND_7_o_buf_0).
+Driver 0: output signal Output_Decoder[6] of instance Latch (Output_Decoder[6]).
+Driver 1: output signal of instance Ground (GND_7_o_buf_0).
+Driver 0: output signal Output_Decoder[5] of instance Latch (Output_Decoder[5]).
+Driver 1: output signal of instance Ground (GND_7_o_buf_0).
+Driver 0: output signal Output_Decoder[4] of instance Latch (Output_Decoder[4]).
+Driver 1: output signal of instance Ground (GND_7_o_buf_0).
+Driver 0: output signal Output_Decoder[3] of instance Latch (Output_Decoder[3]).
+Driver 1: output signal of instance Ground (GND_7_o_buf_0).
+Driver 0: output signal Output_Decoder[2] of instance Latch (Output_Decoder[2]).
+Driver 1: output signal of instance Ground (GND_7_o_buf_0).
+Driver 0: output signal Output_Decoder[1] of instance Latch (Output_Decoder[1]).
+Driver 1: output signal of instance Ground (GND_7_o_buf_0).
+Driver 0: output signal Output_Decoder[0] of instance Latch (Output_Decoder[0]).
+Driver 1: output signal of instance Ground (GND_7_o_buf_0).
+Netlist RegisterFile(Structural) remains a blackbox, due to errors in its contents
+--> 
+
+
+Total memory usage is 337804 kilobytes
+
+Number of errors   :    1 (   0 filtered)
+Number of warnings :    0 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

@@ -1,0 +1,82 @@
+Release 14.7 - xst P.20131013 (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> 
+Parameter TMPDIR set to /home/ds123f15/Documents/organization/Xilinx_Projects/ask1_1/xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.03 secs
+ 
+--> 
+Parameter xsthdpdir set to /home/ds123f15/Documents/organization/Xilinx_Projects/ask1_1/xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.03 secs
+ 
+--> 
+Reading design: RegisterFile.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Parsing VHDL file "/home/ds123f15/Documents/organization/Xilinx_Projects/ask1_1/Register32.vhd" into library work
+Parsing entity <Register32>.
+Parsing architecture <Behavioral> of entity <register32>.
+Parsing VHDL file "/home/ds123f15/Documents/organization/Xilinx_Projects/ask1_1/MUX_1bit.vhd" into library work
+Parsing entity <MUX_1bit>.
+Parsing architecture <Behavioral> of entity <mux_1bit>.
+Parsing VHDL file "/home/ds123f15/Documents/organization/Xilinx_Projects/ask1_1/MUX.vhd" into library work
+Parsing entity <MUX>.
+Parsing architecture <Behavioral> of entity <mux>.
+Parsing VHDL file "/home/ds123f15/Documents/organization/Xilinx_Projects/ask1_1/Decoder5to32.vhd" into library work
+Parsing entity <Decoder5to32>.
+Parsing architecture <Behavioral> of entity <decoder5to32>.
+Parsing VHDL file "/home/ds123f15/Documents/organization/Xilinx_Projects/ask1_1/CompareModule_2.vhd" into library work
+Parsing entity <CompareModule_2>.
+Parsing architecture <Behavioral> of entity <comparemodule_2>.
+Parsing VHDL file "/home/ds123f15/Documents/organization/Xilinx_Projects/ask1_1/CompareModule_1.vhd" into library work
+Parsing entity <CompareModule_1>.
+Parsing architecture <Behavioral> of entity <comparemodule_1>.
+Parsing VHDL file "/home/ds123f15/Documents/organization/Xilinx_Projects/ask1_1/and_gate.vhd" into library work
+Parsing entity <and_gate>.
+Parsing architecture <model> of entity <and_gate>.
+Parsing VHDL file "/home/ds123f15/Documents/organization/Xilinx_Projects/ask1_1/RegisterFile.vhd" into library work
+Parsing entity <RegisterFile>.
+Parsing architecture <Structural> of entity <registerfile>.
+
+
+Total REAL time to Xst completion: 2.00 secs
+Total CPU time to Xst completion: 2.30 secs
+ 
+--> 
+
+
+Total memory usage is 327604 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    0 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+
